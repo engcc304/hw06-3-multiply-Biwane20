@@ -79,14 +79,12 @@
 
 int main()
 {
-
     int ip;
 
     printf("Enter number :\n");
     scanf("%d", &ip);
 
     int plus9, sum = 0;
-
     printf("Series = ");
 
     for (int i = 0; i < ip; i++)
@@ -102,8 +100,6 @@ int main()
             printf(" + ");
         }
     }
-
     printf("\nSum = %d", sum);
-
     return 0;
 }
