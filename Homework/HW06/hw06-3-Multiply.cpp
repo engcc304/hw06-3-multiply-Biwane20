@@ -79,27 +79,19 @@
 
 int main()
 {
-    int ip;
-
-    printf("Enter number :\n");
-    scanf("%d", &ip);
-
-    int plus9, sum = 0;
-    printf("Series = ");
-
-    for (int i = 0; i < ip; i++)
+    int str, end, i, i2;
+    printf("Start :\n");
+    scanf("%d", &str);
+    printf("End :\n");
+    scanf("%d", &end);
+    for (i = str; i <= end; i++)
     {
-
-        plus9 = plus9 * 10 + 9;
-        sum += plus9;
-
-        printf("%d", plus9);
-
-        if (i < ip - 1 && i != ip)
+        for (i2 = 1; i2 <= 9; i2++)
         {
-            printf(" + ");
+            printf("%d x %d = %d\n", i, i2, i * i2);
         }
+        printf("\n");
     }
-    printf("\nSum = %d", sum);
+
     return 0;
 }
