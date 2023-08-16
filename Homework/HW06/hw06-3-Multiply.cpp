@@ -1,7 +1,7 @@
 /*
     รับตัวเลขจากผู้ใช้มา 2 จำนวน เพื่อแสดงแม่สูตรคูณบนหน้าจอคอมพิวเตอร์ โดยแสดงแม่สูตรคูณจากตัวเลขแรกที่รับจากผู้ใช้ ไปสิ้นสุดยังตัวเลขสุดท้ายที่รับจากผู้ใช้
     (โจทย์ข้อนี้ให้ใช้ For Loop เท่านั้น)
-    
+
     Test case:
         Start :
             3
@@ -75,3 +75,35 @@
         6 x 9 = 54
 
 */
+#include <stdio.h>
+
+int main()
+{
+
+    int ip;
+
+    printf("Enter number :\n");
+    scanf("%d", &ip);
+
+    int plus9, sum = 0;
+
+    printf("Series = ");
+
+    for (int i = 0; i < ip; i++)
+    {
+
+        plus9 = plus9 * 10 + 9;
+        sum += plus9;
+
+        printf("%d", plus9);
+
+        if (i < ip - 1 && i != ip)
+        {
+            printf(" + ");
+        }
+    }
+
+    printf("\nSum = %d", sum);
+
+    return 0;
+}
